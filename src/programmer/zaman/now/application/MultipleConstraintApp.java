@@ -41,6 +41,11 @@ public class MultipleConstraintApp {
             this.data = data;
         }
 
-
+        @Override
+        public String toString() {
+            return "Data{" +
+                    "data=" + data +
+                    '}';
+        }
     }
 }

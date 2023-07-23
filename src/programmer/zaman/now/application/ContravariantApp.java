@@ -15,6 +15,7 @@ public class ContravariantApp {
     }
 
     public static void process(MyData<? super String> myData){
+        // dijadikan type objeck karena input dari user bisa berupa tipe data yang berbeda-beda
         Object value = myData.getData();
         myData.setData("ihsan");
         System.out.println(value);

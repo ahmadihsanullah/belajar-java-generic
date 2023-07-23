@@ -1,6 +1,6 @@
 package programmer.zaman.now;
 
-public class Person implements Comparable<Person>{
+public class Person implements Comparable<Person> {
     private String name;
     private String address;
 

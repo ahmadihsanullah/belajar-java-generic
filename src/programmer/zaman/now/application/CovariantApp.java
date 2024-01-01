@@ -15,7 +15,9 @@ public class CovariantApp {
         System.out.println(myData.getData());
         //covariant hanya read only tidak bisa set atau mengubah data
         //karena berbahaya, bisa menyebabkan data tidak konsisten
-        //yang disebabkan diterimaya type data apapun diparameter
+        //yang disebabkan diterimaya type data apapun diparameter 
+        //karena extends object, jadi parameternya  juga bisa dikirim tipe selain 
+        // parameter type yang sudah dideklarasikan awalnya
 
 //        System.out.println(myData.setData("ikhsan")); //ERROR
 

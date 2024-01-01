@@ -13,15 +13,13 @@ public class ComparatorApp {
                 new Person("Budi", "Cianjur"),
         };
 
-        //Person disini merupakan dari kelas lain yang tidak bisa diubah misalnya
-        Comparator<Person> comparator = new Comparator<Person>(){
+
+        Arrays.sort(people, new Comparator<Person>() {
             @Override
             public int compare(Person o1, Person o2) {
-                return o2.getName().compareTo(o1.getName());
+                return o1.getAddress().compareTo(o2.getAddress());
             }
-        };
-
-        Arrays.sort(people, comparator);
+        });
         System.out.println( Arrays.toString(people) );
     }
 }
